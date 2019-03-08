@@ -1,0 +1,76 @@
+.header {
+	position: relative;
+	height: 165px;
+    background: pink url('../images/background-header.jpg') no-repeat;
+    background-size: cover;
+    background-position-y: 0;
+
+    &::after {
+		content: "";
+		position: absolute;
+	    bottom: 0px;
+	    width: 100%;
+	    height: 20px;
+		background: url('../images/zigzag-fill.png');
+	}
+}
+
+.header__title {
+	width: 250px;
+	margin: auto;
+    padding-top: 25px;
+    color: #ffffff;
+    font-family: Lobster,cursive;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+	.header {
+		background-position-y: -50px;
+	}
+
+	.header__title {
+		width: auto;
+		padding-top: 10px;
+		font-size: 36px;
+	}
+}
+
+@media (min-width: 700px) {
+	.header {
+		background-position-y: -90px;
+	}
+
+	.header__title {
+		width: 450px;
+		font-size: 42px;
+	}
+}
+
+@media (min-width: 900px) {
+	.header {
+	    background-position-y: -150px;
+	}
+}
+
+
+@media (min-width: 1000px) {
+	.header {
+    	background-position-y: -280px;
+
+	    &::after {
+			content: "";
+			position: absolute;
+		    bottom: 0px;
+		    width: 100%;
+		    height: 20px;
+			background: url('../images/zigzag-fill.png');
+		}
+	}
+
+	.header__title {
+	    font-size: 50px;
+	}
+}

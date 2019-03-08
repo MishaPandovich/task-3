@@ -1,0 +1,39 @@
+@font-face { 
+  font-family: '../fonts/Lato-Black'; 
+  src: url('../fonts/Lato-Black.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/Lato-Black.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: '../fonts/Lato-Bold'; 
+  src: url('../fonts/Lato-Bold.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/Lato-Bold.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: '../fonts/Lato-Light'; 
+  src: url('../fonts/Lato-Light.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/Lato-Light.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: '../fonts/Lato-Regular'; 
+  src: url('../fonts/Lato-Regular.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/Lato-Regular.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: '../fonts/SourceSansPro-Regular'; 
+  src: url('../fonts/SourceSansPro-Regular.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('../fonts/SourceSansPro-Regular.woff') format('woff');
+  font-weight: normal; 
+  font-style: normal; 
+}
