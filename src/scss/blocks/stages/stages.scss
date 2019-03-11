@@ -59,23 +59,22 @@
   top: 25px;
   left: -35px;
   width: 100px;
-  font-family: Lato, sans-serif;
+  font-family: Lobster,cursive;
   font-weight: 700;
   font-size: 0;
-  font-style: italic;
   text-align: center;
   color: #E0E0E0;
 }
 
 .subtitle--number-two {
-  width: 125px;
+  width: 107px;
 }
 
 .subtitle.active {
   color: #c00;
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 500px) {
   .stages__wrapper {
     width: 375px;
   }
@@ -89,7 +88,7 @@
   }
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .stages__wrapper {
     width: 500px;
   }
@@ -99,7 +98,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .stages__wrapper {
     width: 800px; 
   }

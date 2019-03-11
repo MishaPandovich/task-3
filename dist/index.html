@@ -5,7 +5,7 @@
   <link href="app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
-      <h1 class="header__title">Торты на заказ в Белореченске</h1>
+      <h1 class="header__title">Белореченские торты на заказ</h1>
     </header>
     <section class="stages">
       <div class="stages__wrapper">
@@ -29,6 +29,45 @@
         </div>
       </div>
     </section>
-    <button class="button-next">Next</button>
+    <section class="cart">
+      <h2 class="cart__title">Корзина:</h2>
+      <div class="cart__wrapper"> 
+        <div class="cart__inner">
+          <div class="order"><img class="order__img" src="images/cake-1.jpg" width="250px" heigth="250px">
+            <p class="order__count">Количество:<span class="order__count-value">1</span><span>шт</span></p>
+            <p class="order__price">Стоймость:<span class="order__price-value">1200</span><span>Руб.</span></p>
+            <div class="slider">
+              <div class="thumb" style="left: 10px;"></div>
+              <div class="range-line"></div>
+              <div class="slider-values"></div>
+            </div>
+          </div>
+          <div class="order"><img class="order__img" src="images/cake-2.jpg" width="250px" heigth="250px">
+            <p class="order__count">Количество:<span class="order__count-value">1</span><span>шт</span></p>
+            <p class="order__price">Стоймость:<span class="order__price-value">1000</span><span>Руб.</span></p>
+            <div class="slider">
+              <div class="thumb" style="left: 10px;"></div>
+              <div class="range-line"></div>
+              <div class="slider-values"></div>
+            </div>
+          </div>
+          <div class="order"><img class="order__img" src="images/cake-3.jpg" width="250px" heigth="250px">
+            <p class="order__count">Количество:<span class="order__count-value">1</span><span>шт</span></p>
+            <p class="order__price">Стоймость:<span class="order__price-value">1150</span><span>Руб.</span></p>
+            <div class="slider">
+              <div class="thumb" style="left: 10px;"></div>
+              <div class="range-line"></div>
+              <div class="slider-values"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"><!--блок итоговой цены-->
+      <div class="total">
+        <p class="total__text">Сумма вашего заказа составляет:<span class="total__value">0 </span><span>Рублей</span></p>
+      </div><!--Кнопка переключения к следующией стадии заказа-->
+      <button class="button-next">Да, всё верно!</button>
+    </footer>
   <script type="text/javascript" src="app.js"></script></body>
 </html>

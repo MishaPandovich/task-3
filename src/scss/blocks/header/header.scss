@@ -1,7 +1,7 @@
 .header {
 	position: relative;
 	height: 165px;
-    background: pink url('../images/background-header.jpg') no-repeat;
+    background: pink url('../images/background.jpg') no-repeat;
     background-size: cover;
     background-position-y: 0;
 
@@ -26,11 +26,7 @@
     text-align: center;
 }
 
-@media (min-width: 500px) {
-	.header {
-		background-position-y: -50px;
-	}
-
+@media screen and (min-width: 500px) {
 	.header__title {
 		width: auto;
 		padding-top: 10px;
@@ -38,27 +34,16 @@
 	}
 }
 
-@media (min-width: 700px) {
-	.header {
-		background-position-y: -90px;
-	}
-
+@media screen and (min-width: 700px) {
 	.header__title {
-		width: 450px;
+		width: 350px;
 		font-size: 42px;
 	}
 }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 1000px) {
 	.header {
-	    background-position-y: -150px;
-	}
-}
-
-
-@media (min-width: 1000px) {
-	.header {
-    	background-position-y: -280px;
+    	background-position-y: -20px;
 
 	    &::after {
 			content: "";
@@ -72,5 +57,7 @@
 
 	.header__title {
 	    font-size: 50px;
+	    text-align: right;
+    	margin-left: 45%;
 	}
 }

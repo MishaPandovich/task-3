@@ -1,0 +1,33 @@
+.button-next {
+	margin: auto;
+    display: block;
+    margin-bottom: 40px;
+    padding: 8px 20px;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    background: #ff6685;
+    cursor: pointer;
+    border: none;
+    border-bottom: 4px solid #f24666;
+    outline: none;
+
+    &:hover {
+		background: #f24666;
+		border-color: #e52b50;
+	}
+}
+
+@media (min-width: 1000px) {
+    .button-next {
+        margin-left: auto;
+        margin-top: 5px;
+        margin-bottom: 0;
+
+        &:hover {
+            background: #f24666;
+            border-color: #e52b50;
+        }
+    }
+}

@@ -24,11 +24,12 @@
 		});
 	}
 
-	var stages = document.querySelectorAll('.stage > .stage__line > .stage__fill');		
-	var numbers = document.querySelectorAll('.stage > .stage__number');
-	var subtitle = document.querySelectorAll('.stage > .subtitle');
-	/*функция отвечающая за анимацию*/
+	var stages = document.querySelectorAll('.stage > .stage__line > .stage__fill'),		
+			numbers = document.querySelectorAll('.stage > .stage__number'),
+			subtitle = document.querySelectorAll('.stage > .subtitle');
+	
 	window.animationStage = function() {
+		/*функция отвечающая за анимацию*/
 		if (parseInt(stages[0].style.right) ==  370) {
 			animation(stages[0], 0, 2, 1); 
 			//стадия, число на котором заканчивается анимация, скорость анимации, следующая стадия
