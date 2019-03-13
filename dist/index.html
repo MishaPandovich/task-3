@@ -2,6 +2,7 @@
 <html lang="ru-RU">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
   <link href="app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -29,7 +30,7 @@
         </div>
       </div>
     </section>
-    <section class="cart">
+    <section class="cart hidden">
       <h2 class="cart__title">Корзина:</h2>
       <div class="cart__wrapper"> 
         <div class="cart__inner">
@@ -63,8 +64,35 @@
         </div>
       </div>
     </section>
+    <section class="delivery">
+      <h2 class="delivery__title">Как вы хотели бы получить свой заказ? </h2>
+      <div class="delivery__wrapper">
+        <div class="delivery__toggles">
+          <button class="delivery__toggle delivery__toggle--pickup">Самовывоз</button>
+          <button class="delivery__toggle delivery__toggle--courier">Доставка курьером</button>
+        </div>
+        <div class="delivery__inner">
+          <form class="delivery__form" action="#" method="post">
+            <label class="delivery__label">Как к вам обращаться?<br>
+              <input class="delivery__input" type="text" name="username" placeholder="Ваше имя">
+            </label>
+            <label class="delivery__label">Укажите ваш телефон для подтверждения заказа<br>
+              <input class="delivery__input" type="tel" name="tel" placeholder="+7 953-099-53-67">
+            </label>
+            <label class="delivery__label">Укажите дату, когда вы хотели забрать заказ<br>
+              <input class="delivery__input" type="date" name="fdate" id="fdate">
+            </label>
+            <label class="delivery__label">Укажите время, к которому вы хотели бы забрать заказ<br>
+              <input class="delivery__input" type="time" name="time" id="time">
+            </label>
+            <p class="delivery__label">Укажите пункт самовызова, откуда вы хотели бы забрать заказ: <br><span class="deliver__adress">(нажмите на иконку на карте)</span></p>
+          </form>
+          <div id="map" style="width: 500px; height: 500px; margin:auto;"></div>
+        </div>
+      </div>
+    </section>
     <footer class="footer"><!--блок итоговой цены-->
-      <div class="total">
+      <div class="total hidden">
         <p class="total__text">Сумма вашего заказа составляет:<span class="total__value">0 </span><span>Рублей</span></p>
       </div><!--Кнопка переключения к следующией стадии заказа-->
       <button class="button-next">Да, всё верно!</button>

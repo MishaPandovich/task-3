@@ -10,6 +10,10 @@
     color: #c00;
 }
 
+.total.hidden {
+	display: none;
+}
+
 @media (min-width: 1000px) {
 	.total {
 		display: flex;

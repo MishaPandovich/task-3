@@ -21,9 +21,10 @@
 
 @media (min-width: 1000px) {
     .button-next {
+        margin: 0;
         margin-left: auto;
-        margin-top: 5px;
-        margin-bottom: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
 
         &:hover {
             background: #f24666;

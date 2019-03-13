@@ -1,0 +1,99 @@
+.delivery {
+    width: 63%;
+    margin: 85px auto auto;
+}
+
+.delivery__wrapper {
+	background: #fce883;
+}
+
+.delivery__inner {
+	display: flex;
+	margin-top: -50px;
+}
+
+.delivery__title {
+    font-family: Lobster,cursive;
+    font-size: 25px;
+	text-align: center;
+}
+
+.delivery__toggles {
+    display: flex;
+    margin-top: 0;
+}
+
+.delivery__toggle {
+	position: relative;
+    z-index: 1;
+	width: 50%;
+	padding: 6px 0px;
+    font-family: Lato,sans-serif;
+    font-weight: bold;
+    background: #fabb0f;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    border-radius: 0px 0px 13px 50px;
+    cursor: pointer;
+    outline: none;
+
+    &--courier {
+		border-radius: 0px 0px 50px 13px;
+    	border-left: 1px solid black;
+	}
+
+	&:hover,
+	&:focus {
+		background: #f4a900;
+	}
+}
+
+.delivery__form {
+    width: 50%;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 65px;
+    box-sizing: border-box;
+}
+
+.delivery__label {
+    display: block;
+    font-family: Lato, sans-serif;
+    margin-bottom: 16px;
+}
+
+.delivery__input {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.delivery__input:-moz-placeholder {
+	color: #000000;
+}
+
+.delivery__input::-moz-placeholder {
+	color: #000000;
+}
+
+.delivery__input::-webkit-input-placeholder {
+	color: #000000;
+}
+
+.delivery__input:-ms-placeholder {
+	color: #000000;
+}
+
+.delivery__input::placeholder {
+	color: #000000;
+}
+
+.deliver__adress {
+	color: red;
+}
+
+/*
+.delivery.show {
+	display: block;
+}*/

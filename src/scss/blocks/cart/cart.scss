@@ -71,6 +71,10 @@
 	}
 }
 
+.cart.hidden {
+	display: none;
+}
+
 @media (min-width: 635px) {
 	.order {
 		margin: 0;
