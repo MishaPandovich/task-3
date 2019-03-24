@@ -30,7 +30,7 @@
         thumbElem.style.left = newLeft + 'px';
         rangeLine(thumbElem, line); // изменение линиии при перетаскивании бегунка
         showMinPrice(thumbElem, count); // изменение количества заказнных товаров при перетаскивании бегунка
-        window.totalSum(); //показывает итоговую сумму при изменении количества товара
+        window.totalSum(); //показывает итоговую сумму при изменении количества товара (папка total-price)
       }
 
       document.onmouseup = function() {

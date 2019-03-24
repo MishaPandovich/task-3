@@ -2,18 +2,23 @@ section.delivery
 	h2.delivery__title Как вы хотели бы получить свой заказ? 
 	div.delivery__wrapper
 		div.delivery__toggles
-			button.delivery__toggle.delivery__toggle--pickup Самовывоз
+			button.delivery__toggle.delivery__toggle--pickup.active Самовывоз
 			button.delivery__toggle.delivery__toggle--courier Доставка курьером
 		div.delivery__inner
 			form.delivery__form(action="#" method="post")
 				label.delivery__label Как к вам обращаться?<br>
 					input.delivery__input(type="text" name="username" placeholder="Ваше имя")
 				label.delivery__label Укажите ваш телефон для подтверждения заказа<br>
-					input.delivery__input(type="tel" name="tel" placeholder="+7 953-099-53-67")
-				label.delivery__label Укажите дату, когда вы хотели забрать заказ<br>
-					input.delivery__input(type="date" name="fdate" id="fdate")
-				label.delivery__label Укажите время, к которому вы хотели бы забрать заказ<br>
+					input.delivery__input.delivery__input--phone(type="tel" name="phone" required pattern="^\+\d{2}\(\d{3}\)\s\d{3}[-]\d{2}[-]\d{2}$" placeholder="+7(953) 099-53-67")
+				label.delivery__label Укажите дату, когда вы хотели бы получить заказ<br>
+					input.delivery__input(type="date" name="date" id="date")
+				label.delivery__label Укажите время, к которому вы хотели бы получить заказ<br>
 					input.delivery__input(type="time" name="time" id="time")
-				p.delivery__label Укажите пункт самовызова, откуда вы хотели бы забрать заказ: <br>
+				label.delivery__label.delivery__label--courier Укажите свой полный адрес: <br>
+					input.delivery__input.delivery__input--address(type="text" name="address" placeholder="Улица, дом, квартира")
+				label.delivery__label.delivery__label--courier Возможно, вы хотите что-то уточнить?<br>
+					textarea.delivery__textarea 
+
+				p.delivery__label.delivery__label--map Укажите пункт самовызова, откуда вы хотели бы получить заказ: <br>
 					span.deliver__adress (нажмите на иконку на карте)
-			div(id="map" style="width: 500px; height: 500px; margin:auto;")
+			div(id="map")

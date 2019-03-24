@@ -3,6 +3,8 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <script src="http://api-maps.yandex.ru/2.0/?load=package.full&amp;lang=ru-RU" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.min.js"></script>
   <link href="app.css" rel="stylesheet"></head>
   <body>
     <header class="header">
@@ -30,7 +32,7 @@
         </div>
       </div>
     </section>
-    <section class="cart hidden">
+    <section class="cart">
       <h2 class="cart__title">Корзина:</h2>
       <div class="cart__wrapper"> 
         <div class="cart__inner">
@@ -68,7 +70,7 @@
       <h2 class="delivery__title">Как вы хотели бы получить свой заказ? </h2>
       <div class="delivery__wrapper">
         <div class="delivery__toggles">
-          <button class="delivery__toggle delivery__toggle--pickup">Самовывоз</button>
+          <button class="delivery__toggle delivery__toggle--pickup active">Самовывоз</button>
           <button class="delivery__toggle delivery__toggle--courier">Доставка курьером</button>
         </div>
         <div class="delivery__inner">
@@ -77,22 +79,28 @@
               <input class="delivery__input" type="text" name="username" placeholder="Ваше имя">
             </label>
             <label class="delivery__label">Укажите ваш телефон для подтверждения заказа<br>
-              <input class="delivery__input" type="tel" name="tel" placeholder="+7 953-099-53-67">
+              <input class="delivery__input delivery__input--phone" type="tel" name="phone" required pattern="^+d{2}(d{3})sd{3}[-]d{2}[-]d{2}$" placeholder="+7(953) 099-53-67">
             </label>
-            <label class="delivery__label">Укажите дату, когда вы хотели забрать заказ<br>
-              <input class="delivery__input" type="date" name="fdate" id="fdate">
+            <label class="delivery__label">Укажите дату, когда вы хотели бы получить заказ<br>
+              <input class="delivery__input" type="date" name="date" id="date">
             </label>
-            <label class="delivery__label">Укажите время, к которому вы хотели бы забрать заказ<br>
+            <label class="delivery__label">Укажите время, к которому вы хотели бы получить заказ<br>
               <input class="delivery__input" type="time" name="time" id="time">
             </label>
-            <p class="delivery__label">Укажите пункт самовызова, откуда вы хотели бы забрать заказ: <br><span class="deliver__adress">(нажмите на иконку на карте)</span></p>
+            <label class="delivery__label delivery__label--courier">Укажите свой полный адрес: <br>
+              <input class="delivery__input delivery__input--address" type="text" name="address" placeholder="Улица, дом, квартира">
+            </label>
+            <label class="delivery__label delivery__label--courier">Возможно, вы хотите что-то уточнить?<br>
+              <textarea class="delivery__textarea"> </textarea>
+            </label>
+            <p class="delivery__label delivery__label--map">Укажите пункт самовызова, откуда вы хотели бы получить заказ: <br><span class="deliver__adress">(нажмите на иконку на карте)</span></p>
           </form>
-          <div id="map" style="width: 500px; height: 500px; margin:auto;"></div>
+          <div id="map"></div>
         </div>
       </div>
     </section>
     <footer class="footer"><!--блок итоговой цены-->
-      <div class="total hidden">
+      <div class="total">
         <p class="total__text">Сумма вашего заказа составляет:<span class="total__value">0 </span><span>Рублей</span></p>
       </div><!--Кнопка переключения к следующией стадии заказа-->
       <button class="button-next">Да, всё верно!</button>
