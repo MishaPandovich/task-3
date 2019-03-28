@@ -1,0 +1,184 @@
+.payment {
+	border: 1px solid transparent;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.payment.hidden {
+	display: none;
+}
+
+.payment__title {
+	font-family: Lobster,cursive;
+    font-size: 25px;
+	text-align: center;
+}
+
+.payment__card-wrap {
+	border: 1px solid transparent;
+    margin-bottom: 55px;
+    background: #fce883;
+}
+
+.payment__card--front-side {
+	position: relative;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+	display: flex;
+    flex-wrap: wrap;
+    width: 260px; //320
+    padding: 20px;
+    padding-top: 77px;
+    margin-top: 20px;
+	margin-left: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px -3px #000000;
+
+    &::before {
+		content: "";
+		position: absolute;
+		top: 2px;
+		right: 5px;
+		width: 290px;
+		height: 60px;
+		background: url('../images/logos.png') no-repeat;
+		background-position-y: -22px;
+		background-position-x: -30px;
+	}
+}
+
+.payment__input {
+	padding: 5px;
+}
+
+.payment__input--data {
+	width: 35px;
+	margin-left: auto;
+	text-align: center;
+}
+
+.payment__input--user {
+	margin-top: 25px;
+	width: 100%;
+}
+
+.payment__card--back-side {
+	width: 260px;
+	background: #fff;
+	padding: 80px 20px 58px;
+	border-radius: 5px;
+	position: relative;
+	top: -50px;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+    &::before {
+	    content: "";
+	    position: absolute;
+	    top: 22px;
+	    left: 0;
+	    width: 100%;
+	    height: 36px;
+	    background: #c7c2c2;
+	}
+}
+
+.payment__input--cvc {
+	width: 50px;
+    margin-left: 79%;
+    text-align: center;
+}
+
+.payment__card-status-message {
+	margin-left: 17%;
+    margin-top: -40px;
+    text-transform: uppercase;
+    font-family: Roboto,sans-serif;
+}
+
+.describe__text {
+    width: 90%; //
+	margin-top: 50px;
+	margin-bottom: 40px;
+	font-family: Roboto,sans-serif;
+	font-size: 13px;
+	margin-left: 13px; //
+}
+
+@media (min-width: 450px) {
+	.payment__card-status-message {
+		margin-left: 30%;
+	}
+}
+
+@media (min-width: 700px) {
+	.payment__card--front-side {
+		margin: 30px auto auto 70px;
+	}
+
+	.payment__card--back-side {
+		top: -60px;
+	}
+
+	.payment__card-status-message {
+		margin-left: 36%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.payment {
+		width: 63%;
+	}
+
+	.payment__card--front-side {
+		position: relative;
+		z-index: 1;
+		display: flex;
+	    flex-wrap: wrap;
+	    width: 320px;
+	    padding: 20px;
+	    padding-top: 77px;
+	    background: #ffffff;
+	    border-radius: 10px;
+	    box-shadow: 3px 3px 8px -3px #000000;
+	}
+
+	.payment__input {
+		padding: 5px;
+	}
+
+	.payment__input--data {
+		width: 55px;
+		margin-left: auto;
+	}
+
+	.payment__input--user {
+		margin-top: 25px;
+	}
+
+	.payment__card--back-side {
+	    width: 320px;
+	    background: #fff;
+	    padding: 80px 20px 58px;
+	    border-radius: 5px;
+	    top: -70px;
+	    right: -140px;
+	}
+
+	.payment__card-status-message {
+		margin-left: 32%;
+	}
+
+	.describe__text {
+		width: 85%;
+	    margin-top: 50px;
+	    margin-bottom: 40px;
+	    font-family: Roboto, sans-serif;
+	    font-size: 13px;
+	}
+}

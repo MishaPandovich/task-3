@@ -6,3 +6,4 @@ import './js/total-price/total-price.js';
 import './js/map/map.js';
 import './js/toggle-delivery/toggle-delivery.js';
 import './js/mask-phone/mask-phone.js';
+import './js/validate-card/validate-card.js';

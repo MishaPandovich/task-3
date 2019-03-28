@@ -99,6 +99,25 @@
         </div>
       </div>
     </section>
+    <section class="payment hidden">
+      <div class="payment__inner container">
+        <h3 class="payment__title">Оплатите пожалуйста заказ</h3>
+        <div class="payment__card-wrap">
+          <div class="payment__card--front-side">
+            <input class="payment__input payment__input--number" type="text" name="card-number" id="payment__card-number" placeholder="Номер карты" maxlength="19" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required>
+            <input class="payment__input payment__input--data" type="text" name="card-date" id="payment__card-date" placeholder="мм/гг" maxlength="5" pattern="[0-1]{1}[0-9]{1}/[0-3]{1}[0-9]{1}" required>
+            <input class="payment__input payment__input--user" type="text" name="cardholder" id="payment__cardholder" placeholder="Имя держателя" required>
+          </div>
+          <div class="payment__card--back-side">
+            <input class="payment__input payment__input--cvc" type="text" name="card-cvc" id="payment__card-cvc" placeholder="CVC" minlength="3" maxlength="3" pattern="[0-9]{3}" required>
+          </div>
+          <p class="payment__card-status-message">Статус карты: <span class="payment__card-status">Не определён</span></p>
+          <div class="describe">
+            <p class="describe__text"><b>Мы гарантируем безопасность ваших данных.</b> Все данные банковской карты вводите точно как написано на карте. Не волнуйтесь, наша система поможет с заполеннием. После заполнения всех полей, система проверит функционирование карты и можно переходить к оплате.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer"><!--блок итоговой цены-->
       <div class="total">
         <p class="total__text">Сумма вашего заказа составляет:<span class="total__value">0 </span><span>Рублей</span></p>

@@ -1,0 +1,16 @@
+section.payment.hidden
+	div.payment__inner.container
+		h3.payment__title Оплатите пожалуйста заказ
+		
+		div.payment__card-wrap
+			div.payment__card--front-side
+				input.payment__input.payment__input--number(type="text" name="card-number" id="payment__card-number" placeholder="Номер карты" maxlength = "19" pattern = "[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" required)
+				input.payment__input.payment__input--data(type="text" name="card-date" id="payment__card-date" placeholder="мм/гг" maxlength = "5" pattern = "[0-1]{1}[0-9]{1}/[0-3]{1}[0-9]{1}" required)
+				input.payment__input.payment__input--user(type="text" name="cardholder" id="payment__cardholder" placeholder="Имя держателя" required)
+			div.payment__card--back-side
+				input.payment__input.payment__input--cvc(type="text" name="card-cvc" id="payment__card-cvc" placeholder="CVC" minlength = "3" maxlength = "3" pattern = "[0-9]{3}" required)
+			p.payment__card-status-message Статус карты: <span class="payment__card-status">Не определён</span>
+
+			div.describe
+				p.describe__text <b>Мы гарантируем безопасность ваших данных.</b> Все данные банковской карты вводите точно как написано на карте. Не волнуйтесь, наша система поможет с заполеннием. После заполнения всех полей, система проверит функционирование карты и можно переходить к оплате.
+ 
